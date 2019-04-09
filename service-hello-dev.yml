@@ -14,4 +14,4 @@ management:
     web:
       exposure:
         include: bus-refresh
-version: v2
+version: v3

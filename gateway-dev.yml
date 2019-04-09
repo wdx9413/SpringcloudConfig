@@ -10,20 +10,20 @@ spring:
           uri: lb://CLIENT
           predicates:
           - Path=/hello/**
-#     bus:
-#       enable: true
-#       trace:
-#         enable: true
-#   rabbitmq:
-#     host: localhost
-#     port: 5672
-#     username: guest
-#     password: guest
+    bus:
+      enable: true
+      trace:
+        enable: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
-# management:
-#   endpoints:
-#     web:
-#       exposure:
-#         include: bus-refresh
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
 
-version: v4
+version: v5

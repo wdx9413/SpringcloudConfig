@@ -7,15 +7,15 @@ spring:
     port: 5672
     username: guest
     password: guest
-  cloud:
-    bus:
-      enable: true
-      trace:
-        enable: true
-management:
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
+#   cloud:
+#     bus:
+#       enable: true
+#       trace:
+#         enable: true
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: bus-refresh
 
-version: v3
+version: v4

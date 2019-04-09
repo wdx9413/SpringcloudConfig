@@ -1,0 +1,27 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    bus:
+      enable: true
+      trace:
+        enable: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+    cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+turbine:
+  app-config: service-hello,client
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+  combine-host: true
+  instanceUrlSuffix:
+    default: actuator/hystrix.stream

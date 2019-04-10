@@ -9,6 +9,7 @@ spring:
       enable: true
       trace:
         enable: true
+  
 management:
   endpoints:
     web:
@@ -20,8 +21,6 @@ management:
 turbine:
   app-config: service-hello,client
   aggregator:
-    clusterConfig: default
-  clusterNameExpression: new String("default")
-  combine-host: true
-  instanceUrlSuffix:
-    default: actuator/hystrix.stream
+    cluster-config: default
+  cluster-name-expression: new String("default")
+  instanceUrlSuffix: hystrix.stream

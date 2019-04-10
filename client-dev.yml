@@ -12,6 +12,8 @@ spring:
       enable: true
       trace:
         enable: true
+  zipkin：
+    base-url:http://localhost:9411
 management:
   endpoints:
     web:
